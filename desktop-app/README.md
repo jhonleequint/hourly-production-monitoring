@@ -10,3 +10,7 @@ The desktop application is the core of the system. It runs on a PC next to the l
 - Read inspection results from industrial vision cameras over TCP.
 - Run unattended on line PCs and TV panels.
 - Never lose counted production after a power cut.
+
+## Architecture decision (Apr 2026)
+
+The Streamlit prototype depended on a Python environment and on spreadsheets filled in by hand. The next step is a self-contained desktop executable: one installer per line PC, all dependencies bundled, devices read directly.

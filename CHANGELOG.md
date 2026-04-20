@@ -2,6 +2,10 @@
 
 Project timeline, newest first.
 
+## 2026-04-20
+
+- **Architecture.** Decision to move to a standalone desktop executable for line PCs and TV panels.
+
 ## 2026-03-18
 
 - **Shop-floor requirements.** Communication protocols of the inspection cameras surveyed and a closed-network topology (no internet) defined.
