@@ -2,6 +2,10 @@
 
 Project timeline, newest first.
 
+## 2026-05-27
+
+- **Dashboard restructure.** Data model for lines and occurrences: sector filter, quality (FQA, IPQC) and HR indicators, target attainment and scrap rate.
+
 ## 2026-04-20
 
 - **Architecture.** Decision to move to a standalone desktop executable for line PCs and TV panels.

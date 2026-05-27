@@ -4,7 +4,7 @@ import os
 
 def main():
     base_dir = os.path.dirname(os.path.abspath(__file__))
-    app_path = os.path.join(base_dir, "src", "app.py")
+    app_path = os.path.join(base_dir, "app.py")
 
     subprocess.run([
         sys.executable, "-m", "streamlit", "run", app_path
