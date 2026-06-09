@@ -2,6 +2,14 @@
 
 Project timeline, newest first.
 
+## 2026-06-08
+
+- **Desktop app 1.0.0.** Migration to Electron and Node.js, offline web interface, data received from a direct TCP client in JSON.
+
+## 2026-06-07
+
+- **JavaFX proof of concept.** Desktop prototype in JavaFX, dropped the same day after runtime issues on the factory PCs.
+
 ## 2026-05-27
 
 - **Dashboard restructure.** Data model for lines and occurrences: sector filter, quality (FQA, IPQC) and HR indicators, target attainment and scrap rate.
