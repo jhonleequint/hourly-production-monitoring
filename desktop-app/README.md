@@ -23,3 +23,7 @@ A JavaFX proof of concept was tried first and dropped the same day because of ru
 
 - Electron + Node.js desktop application with an offline web interface.
 - Line data received from a direct TCP client in JSON.
+
+### 1.1.0 (Jun 2026)
+
+- JSON replaced by newline-delimited raw text over a standard TCP socket, which is what the cameras send natively. A single read can carry half a line or several lines, so input is buffered until each newline. See [`examples/tcp-line-reader.js`](examples/tcp-line-reader.js).

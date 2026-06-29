@@ -2,6 +2,10 @@
 
 Project timeline, newest first.
 
+## 2026-06-29
+
+- **Desktop app 1.1.0.** JSON replaced by newline-delimited raw text over a standard TCP socket.
+
 ## 2026-06-08
 
 - **Desktop app 1.0.0.** Migration to Electron and Node.js, offline web interface, data received from a direct TCP client in JSON.
