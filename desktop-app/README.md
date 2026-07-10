@@ -27,3 +27,10 @@ A JavaFX proof of concept was tried first and dropped the same day because of ru
 ### 1.1.0 (Jun 2026)
 
 - JSON replaced by newline-delimited raw text over a standard TCP socket, which is what the cameras send natively. A single read can carry half a line or several lines, so input is buffered until each newline. See [`examples/tcp-line-reader.js`](examples/tcp-line-reader.js).
+
+### 2.0.0 (Jul 2026)
+
+- Several lines monitored at the same time, with data fully isolated per line.
+- Line-stopped detection that respects shift schedules. Input and output each have their own idle timer (20 s) and one never resets the other, so a jam where the input stops while the output keeps draining is still counted. See [`examples/downtime-timer.js`](examples/downtime-timer.js).
+- Full-screen TV mode rotating between lines.
+- Interface in Portuguese, English and Mandarin.

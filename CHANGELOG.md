@@ -2,6 +2,10 @@
 
 Project timeline, newest first.
 
+## 2026-07-09
+
+- **Desktop app 2.0.0.** Multiple lines at the same time, line-stopped detection that respects shifts, full-screen rotating TV mode and Mandarin translation.
+
 ## 2026-06-29
 
 - **Desktop app 1.1.0.** JSON replaced by newline-delimited raw text over a standard TCP socket.
