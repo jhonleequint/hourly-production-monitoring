@@ -2,6 +2,11 @@
 
 Project timeline, newest first.
 
+## 2026-08-03
+
+- **Firmware V3[B].** ESP32 operator station sending production and defect events over ESP-NOW. The earlier ESP32 iterations built in Wokwi (V2 and V3[A]) were added alongside.
+- **Reject counting PoC.** Side proof of concept in C#/WPF with OpenCV to count rejected boards on trays with a USB camera (not part of this repository).
+
 ## 2026-07-09
 
 - **Desktop app 2.0.0.** Multiple lines at the same time, line-stopped detection that respects shifts, full-screen rotating TV mode and Mandarin translation.

@@ -1,0 +1,11 @@
+{
+  "name": "5v-power supply",
+  "author": "Jhon Lee Quint",
+  "pins": [
+    "",
+    "",
+    "GND",
+    "VCC"
+  ],
+  "controls": []
+}

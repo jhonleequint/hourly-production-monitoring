@@ -1,0 +1,11 @@
+{
+  "name": "fonte12v",
+  "author": "Jhon Lee Quint",
+  "pins": [
+    "VCC",
+    "GND",
+    "IN",
+    "OUT"
+  ],
+  "controls": []
+}

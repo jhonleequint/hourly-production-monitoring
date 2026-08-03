@@ -1,0 +1,10 @@
+# Wokwi Library List
+# See https://docs.wokwi.com/guides/libraries
+
+Adafruit SSD1306
+Adafruit GFX Library
+DHT sensor library
+Keypad
+ESP32Servo
+Robot IR Remote
+IRremote

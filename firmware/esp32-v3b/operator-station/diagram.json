@@ -1,0 +1,69 @@
+{
+  "version": 1,
+  "author": "Uri Shaked",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-breadboard-mini", "id": "bb1", "top": 113.8, "left": 333.6, "attrs": {} },
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 0, "left": -4.76, "attrs": {} },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": 25.4,
+      "left": 518.4,
+      "attrs": { "color": "green", "xray": "1" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn2",
+      "top": 351.8,
+      "left": 163.2,
+      "attrs": { "color": "blue", "xray": "1" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn3",
+      "top": 275,
+      "left": 163.2,
+      "attrs": { "color": "yellow", "xray": "1" }
+    },
+    {
+      "type": "wokwi-lcd1602",
+      "id": "lcd1",
+      "top": -137.6,
+      "left": 514.4,
+      "attrs": { "pins": "i2c" }
+    },
+    {
+      "type": "wokwi-hc-sr04",
+      "id": "ultrasonic1",
+      "top": -132.9,
+      "left": 197.5,
+      "attrs": { "distance": "2" }
+    },
+    { "type": "chip-dffds", "id": "chip1", "top": 106.62, "left": 544.21, "attrs": {} }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "ultrasonic1:TRIG", "esp:5", "green", [ "v0" ] ],
+    [ "ultrasonic1:ECHO", "esp:18", "green", [ "v0" ] ],
+    [ "ultrasonic1:VCC", "bb1:1t.a", "red", [ "v0" ] ],
+    [ "btn1:1.l", "esp:19", "green", [ "h0" ] ],
+    [ "lcd1:VCC", "bb1:1t.b", "red", [ "h0" ] ],
+    [ "lcd1:SDA", "esp:21", "green", [ "h0" ] ],
+    [ "lcd1:SCL", "esp:22", "green", [ "h0" ] ],
+    [ "lcd1:GND", "bb1:5b.f", "black", [ "h0" ] ],
+    [ "esp:GND.2", "bb1:5b.j", "black", [ "v0" ] ],
+    [ "ultrasonic1:GND", "bb1:4b.h", "black", [ "v0" ] ],
+    [ "bb1:4b.h", "bb1:5b.h", "green", [ "v0", "h9.6" ] ],
+    [ "btn2:2.r", "bb1:5b.i", "green", [ "h0" ] ],
+    [ "btn3:2.r", "bb1:5b.h", "green", [ "h0" ] ],
+    [ "btn1:2.r", "bb1:5b.g", "green", [ "h0" ] ],
+    [ "chip1:GND", "bb1:5b.f", "black", [ "h0" ] ],
+    [ "chip1:VCC", "bb1:1t.c", "red", [ "h0" ] ],
+    [ "esp:3V3", "bb1:1t.d", "green", [ "h345.75" ] ],
+    [ "btn2:1.l", "esp:25", "green", [ "h-153.6", "v-259.2" ] ],
+    [ "btn3:1.l", "esp:26", "green", [ "h0" ] ]
+  ],
+  "dependencies": {}
+}
