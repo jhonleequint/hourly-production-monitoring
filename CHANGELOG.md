@@ -2,6 +2,10 @@
 
 Project timeline, newest first.
 
+## 2026-08-04
+
+- **ESP-NOW gateway.** Receiver firmware that forwards station events to the desktop app over serial.
+
 ## 2026-08-03
 
 - **Firmware V3[B].** ESP32 operator station sending production and defect events over ESP-NOW. The earlier ESP32 iterations built in Wokwi (V2 and V3[A]) were added alongside.

@@ -46,3 +46,24 @@ Operation:
 - The ultrasonic sensor counts a part when something passes within 10 cm.
 - SOLDER and COMPONENT buttons register a defect of that category.
 - Three quick presses on MODE return to the model menu.
+
+### Protocol
+
+The station sends a fixed-size struct:
+
+```c
+typedef struct {
+  char model[32];
+  char event[32];     // PRODUCTION | DEFECT | MODEL_SELECTED
+  char category[32];  // SOLDER | COMPONENT (defects only)
+  uint32_t quantity;
+} Message;
+```
+
+The gateway prints a debug block and then one line per event for the desktop application:
+
+```
+CV-AX53(BR)1.6|DEFECT|SOLDER|1
+```
+
+Before flashing the station, set `gatewayMAC` in `operator-station.ino` to the MAC address the gateway prints at boot.
