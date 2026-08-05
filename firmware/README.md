@@ -67,3 +67,20 @@ CV-AX53(BR)1.6|DEFECT|SOLDER|1
 ```
 
 Before flashing the station, set `gatewayMAC` in `operator-station.ino` to the MAC address the gateway prints at boot.
+
+### Wiring (V3[B] station)
+
+| Part | ESP32 |
+|---|---|
+| LCD 16x2 I2C (SDA / SCL) | GPIO 21 / GPIO 22 |
+| HC-SR04 TRIG / ECHO | GPIO 5 / GPIO 18 |
+| MODE button | GPIO 19 |
+| SOLDER button | GPIO 25 |
+| COMPONENT button | GPIO 26 |
+
+Buttons go between the GPIO and GND using the internal pull-up (`INPUT_PULLUP`), so no external resistors are needed. All parts share the same GND.
+
+## Notes
+
+- Passwords and order numbers in the sketches are demo values for the simulators.
+- Product model names are fictional.

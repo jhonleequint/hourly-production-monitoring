@@ -34,3 +34,9 @@ A JavaFX proof of concept was tried first and dropped the same day because of ru
 - Line-stopped detection that respects shift schedules. Input and output each have their own idle timer (20 s) and one never resets the other, so a jam where the input stops while the output keeps draining is still counted. See [`examples/downtime-timer.js`](examples/downtime-timer.js).
 - Full-screen TV mode rotating between lines.
 - Interface in Portuguese, English and Mandarin.
+
+### Line integration prototype (Aug 2026)
+
+![Prototype architecture](../docs/architecture-prototype.png)
+
+ESP32 at the line input over serial, vision camera at the output over TCP, both read independently so a failure on one side never blocks the other. The firmware for the input side is in [`../firmware`](../firmware).

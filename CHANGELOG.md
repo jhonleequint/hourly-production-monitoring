@@ -2,6 +2,10 @@
 
 Project timeline, newest first.
 
+## 2026-08-05
+
+- **Prototype integration.** Architecture of the line setup (ESP32 input, vision camera output, desktop app, database) and wiring documented.
+
 ## 2026-08-04
 
 - **ESP-NOW gateway.** Receiver firmware that forwards station events to the desktop app over serial.
