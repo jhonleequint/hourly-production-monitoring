@@ -2,6 +2,10 @@
 
 Project timeline, newest first.
 
+## 2026-08-20
+
+- **Desktop app 2.5.0.** Local WOFF2 fonts for 100% offline operation and local TCP bridge utilities.
+
 ## 2026-08-05
 
 - **Prototype integration.** Architecture of the line setup (ESP32 input, vision camera output, desktop app, database) and wiring documented.

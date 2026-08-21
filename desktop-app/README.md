@@ -40,3 +40,8 @@ A JavaFX proof of concept was tried first and dropped the same day because of ru
 ![Prototype architecture](../docs/architecture-prototype.png)
 
 ESP32 at the line input over serial, vision camera at the output over TCP, both read independently so a failure on one side never blocks the other. The firmware for the input side is in [`../firmware`](../firmware).
+
+### 2.5.0 (Aug 2026)
+
+- Fonts bundled as local WOFF2 files; the interface never depends on a CDN.
+- Small local TCP bridge utilities for tests and network setup.
