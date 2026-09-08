@@ -2,6 +2,10 @@
 
 Project timeline, newest first.
 
+## 2026-09-08
+
+- **Desktop app 2.8.0.** Camera connection guide, 1 Hz heartbeat and daily storage in JSON files.
+
 ## 2026-08-20
 
 - **Desktop app 2.5.0.** Local WOFF2 fonts for 100% offline operation and local TCP bridge utilities.

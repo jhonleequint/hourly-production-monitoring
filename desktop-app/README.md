@@ -45,3 +45,9 @@ ESP32 at the line input over serial, vision camera at the output over TCP, both 
 
 - Fonts bundled as local WOFF2 files; the interface never depends on a CDN.
 - Small local TCP bridge utilities for tests and network setup.
+
+### 2.8.0 (Sep 2026)
+
+- Camera connection guide written for the maintenance team.
+- 1 Hz heartbeat to detect disconnected devices.
+- Daily storage in JSON files, one per day, written with an atomic rename so a power cut cannot corrupt them.
