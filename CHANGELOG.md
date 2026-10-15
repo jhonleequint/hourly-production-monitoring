@@ -2,6 +2,10 @@
 
 Project timeline, newest first.
 
+## 2026-10-14
+
+- **Desktop app 3.0.0.** User manual, access control with password profiles and serial (COM) input from the ESP32 gateway.
+
 ## 2026-09-08
 
 - **Desktop app 2.8.0.** Camera connection guide, 1 Hz heartbeat and daily storage in JSON files.

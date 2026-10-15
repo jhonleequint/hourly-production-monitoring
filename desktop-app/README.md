@@ -51,3 +51,9 @@ ESP32 at the line input over serial, vision camera at the output over TCP, both 
 - Camera connection guide written for the maintenance team.
 - 1 Hz heartbeat to detect disconnected devices.
 - Daily storage in JSON files, one per day, written with an atomic rename so a power cut cannot corrupt them.
+
+### 3.0.0 (Oct 2026)
+
+- Serial (COM) input from the ESP32 gateway with the line protocol `MODEL|EVENT|CATEGORY|QTY`; lines that do not match (gateway debug output, noise) are discarded. See [`examples/serial-event-parser.js`](examples/serial-event-parser.js).
+- Access control with password profiles (administrator and viewer).
+- User manual for operators.
