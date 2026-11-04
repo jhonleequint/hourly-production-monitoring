@@ -57,3 +57,7 @@ ESP32 at the line input over serial, vision camera at the output over TCP, both 
 - Serial (COM) input from the ESP32 gateway with the line protocol `MODEL|EVENT|CATEGORY|QTY`; lines that do not match (gateway debug output, noise) are discarded. See [`examples/serial-event-parser.js`](examples/serial-event-parser.js).
 - Access control with password profiles (administrator and viewer).
 - User manual for operators.
+
+### Packaging systems analysis (Nov 2026)
+
+- Configuration of the packaging and warehouse systems studied to plan a single source for production orders and serial numbers.

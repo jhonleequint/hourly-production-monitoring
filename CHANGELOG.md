@@ -2,6 +2,10 @@
 
 Project timeline, newest first.
 
+## 2026-11-03
+
+- **Packaging systems analysis.** Configuration of the packaging and warehouse systems studied to plan centralized production orders and serial numbers.
+
 ## 2026-10-14
 
 - **Desktop app 3.0.0.** User manual, access control with password profiles and serial (COM) input from the ESP32 gateway.
