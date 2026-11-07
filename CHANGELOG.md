@@ -2,6 +2,13 @@
 
 Project timeline, newest first.
 
+## 2026-11-06
+
+- **Desktop app 3.1.0.** Remote access through a local HTTPS server on port 3000; legacy TCP and serial drivers archived.
+- **Desktop app 3.1.1.** Classic 3.0.0 look restored, persistence in SQLite via WebAssembly (sql.js) and automatic event classification per station.
+- **Desktop app 3.2.0.** Targets and production orders read from the planning spreadsheet, protected orders API and first station pairing flow.
+- **Desktop app 3.2.1.** Shift and planned-stop management, history per sector and production installers.
+
 ## 2026-11-03
 
 - **Packaging systems analysis.** Configuration of the packaging and warehouse systems studied to plan centralized production orders and serial numbers.

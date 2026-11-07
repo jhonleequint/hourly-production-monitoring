@@ -61,3 +61,12 @@ ESP32 at the line input over serial, vision camera at the output over TCP, both 
 ### Packaging systems analysis (Nov 2026)
 
 - Configuration of the packaging and warehouse systems studied to plan a single source for production orders and serial numbers.
+
+### 3.1.0 - 3.2.1 (Nov 2026)
+
+![Current architecture](../docs/architecture-current.png)
+
+- Remote access served by a local HTTPS server (port 3000) instead of an external tunnel; legacy TCP and serial drivers archived.
+- Persistence moved to SQLite running in WebAssembly (sql.js); events classified automatically per station.
+- Targets and production orders read from the planning spreadsheet and exposed through a protected API route.
+- Station pairing, shift and planned-stop management, history per sector and production installers.
