@@ -2,6 +2,10 @@
 
 Project timeline, newest first.
 
+## 2026-11-07
+
+- **Desktop app 3.2.1 (pairing).** TLS certificates stabilized, one access key per physical station and legacy manual registration removed from the interface.
+
 ## 2026-11-06
 
 - **Desktop app 3.1.0.** Remote access through a local HTTPS server on port 3000; legacy TCP and serial drivers archived.

@@ -70,3 +70,7 @@ ESP32 at the line input over serial, vision camera at the output over TCP, both 
 - Persistence moved to SQLite running in WebAssembly (sql.js); events classified automatically per station.
 - Targets and production orders read from the planning spreadsheet and exposed through a protected API route.
 - Station pairing, shift and planned-stop management, history per sector and production installers.
+
+### 3.2.1 pairing adjustments (Nov 2026)
+
+- TLS certificates stabilized, one access key per physical station, legacy manual registration removed from the interface.
