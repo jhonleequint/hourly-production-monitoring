@@ -74,3 +74,19 @@ ESP32 at the line input over serial, vision camera at the output over TCP, both 
 ### 3.2.1 pairing adjustments (Nov 2026)
 
 - TLS certificates stabilized, one access key per physical station, legacy manual registration removed from the interface.
+
+## Current interface
+
+![Desktop application](../docs/desktop-app.png)
+
+Line view with fictional data: daily input/output against target, hourly production chart, defect rate with top defects, downtime timer and the status of every line.
+
+## Security practices
+
+- No passwords or keys in the source code: initial credentials are generated on first run and stored only as hashes.
+- API keys are encrypted with the operating system credential store (Electron `safeStorage`).
+- Remote access only inside the plant network, over HTTPS, with per-station keys.
+
+## Stack
+
+JavaScript (Node.js, Electron), HTML, Tailwind CSS, Chart.js, `serialport`, `net`, SQLite via sql.js.
