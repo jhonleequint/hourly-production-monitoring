@@ -47,6 +47,8 @@ Operation:
 - SOLDER and COMPONENT buttons register a defect of that category.
 - Three quick presses on MODE return to the model menu.
 
+Simulation: [Wokwi](https://wokwi.com/projects/471301031734011905)
+
 ### Protocol
 
 The station sends a fixed-size struct:
